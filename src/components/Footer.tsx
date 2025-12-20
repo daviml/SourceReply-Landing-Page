@@ -8,15 +8,13 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="md:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-                <span className="text-foreground font-bold text-sm">CA</span>
-              </div>
+              <img src="/logo.png" alt="SourceReply Logo" className="w-8 h-8" />
               <span className="text-xl font-bold text-foreground">
-                Code<span className="gradient-text">Aware</span>
+                Source<span className="gradient-text">Reply</span>
               </span>
             </a>
             <p className="text-muted-foreground max-w-sm">
-              Triagem inteligente de chamados com IA local. 
+              Triagem inteligente de chamados com IA local.
               Privacidade total, zero vazamento de dados.
             </p>
           </div>
@@ -79,25 +77,25 @@ const Footer = () => {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-border/50 gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} CodeAware. Todos os direitos reservados.
+            © {new Date().getFullYear()} SourceReply. Todos os direitos reservados.
           </p>
-          
+
           {/* Social Links */}
           <div className="flex items-center gap-4">
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
             >
               <Twitter className="w-5 h-5" />
             </a>
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
             >
               <Linkedin className="w-5 h-5" />
             </a>
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
             >
               <Github className="w-5 h-5" />

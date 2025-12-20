@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "Preciso de uma super placa de vídeo?",
-    answer: "Não. Otimizamos modelos leves que rodam em qualquer CPU moderna (i5/Ryzen 5 ou superior). O CodeAware foi projetado para funcionar em hardware comum de escritório, sem necessidade de GPUs dedicadas ou máquinas especiais.",
+    answer: "Não. Otimizamos modelos leves que rodam em qualquer CPU moderna (i5/Ryzen 5 ou superior). O SourceReply foi projetado para funcionar em hardware comum de escritório, sem necessidade de GPUs dedicadas ou máquinas especiais.",
   },
   {
     question: "Meus dados vão para o Google/OpenAI?",
@@ -16,11 +16,11 @@ const faqs = [
   },
   {
     question: "Qual o tamanho máximo de código que posso indexar?",
-    answer: "O CodeAware suporta repositórios de até 50GB. Para projetos maiores, oferecemos otimizações personalizadas. A indexação é incremental, então após a primeira vez, apenas as mudanças são processadas.",
+    answer: "O SourceReply suporta repositórios de até 50GB. Para projetos maiores, oferecemos otimizações personalizadas. A indexação é incremental, então após a primeira vez, apenas as mudanças são processadas.",
   },
   {
     question: "Funciona com qualquer linguagem de programação?",
-    answer: "Sim! O CodeAware suporta todas as linguagens mais populares: JavaScript, TypeScript, Python, Java, C#, Go, Rust, PHP, Ruby e muitas outras. O modelo de IA foi treinado para entender a lógica de código independente da sintaxe.",
+    answer: "Sim! O SourceReply suporta todas as linguagens mais populares: JavaScript, TypeScript, Python, Java, C#, Go, Rust, PHP, Ruby e muitas outras. O modelo de IA foi treinado para entender a lógica de código independente da sintaxe.",
   },
   {
     question: "Como funciona a integração com sistemas de tickets?",
@@ -46,7 +46,7 @@ const FAQSection = () => {
             <span className="gradient-text">dúvidas</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            As respostas para as perguntas mais comuns sobre o CodeAware.
+            As respostas para as perguntas mais comuns sobre o SourceReply.
           </p>
         </div>
 
@@ -54,8 +54,8 @@ const FAQSection = () => {
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+              <AccordionItem
+                key={index}
                 value={`item-${index}`}
                 className="glass-card px-6 border border-border/50 rounded-xl data-[state=open]:border-primary/30 transition-colors"
               >

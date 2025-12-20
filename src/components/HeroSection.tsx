@@ -8,9 +8,9 @@ const HeroSection = () => {
       <div className="absolute inset-0 section-gradient" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-neon-purple/10 rounded-full blur-[120px] animate-pulse-slow" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-cyan/10 rounded-full blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }} />
-      
+
       {/* Grid Pattern */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
           backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
@@ -36,7 +36,7 @@ const HeroSection = () => {
           {/* Subheadline */}
           <p className="fade-up-delay-2 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
             O primeiro sistema de triagem com IA que roda{" "}
-            <span className="text-foreground font-medium">100% no seu hardware</span>. 
+            <span className="text-foreground font-medium">100% no seu hardware</span>.
             Conecte seu código-fonte, importe seus chamados e tenha diagnósticos precisos em segundos.{" "}
             <span className="text-neon-cyan font-medium">Zero vazamento de dados.</span>
           </p>
@@ -100,11 +100,11 @@ const HeroSection = () => {
                 </div>
                 <div className="flex-1 flex justify-center">
                   <div className="px-4 py-1 bg-muted rounded-md text-xs text-muted-foreground">
-                    CodeAware Triage v2.1.0
+                    SourceReply Triage v2.1.0
                   </div>
                 </div>
               </div>
-              
+
               {/* App Content Preview */}
               <div className="p-6 md:p-8 bg-gradient-to-b from-card to-background">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -122,7 +122,7 @@ const HeroSection = () => {
                       <div className="text-xs text-muted-foreground">Aguardando triagem</div>
                     </div>
                   </div>
-                  
+
                   {/* Main Content */}
                   <div className="md:col-span-2 space-y-4">
                     <div className="p-4 rounded-lg bg-muted/20 border border-border/30">
@@ -153,7 +153,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Glow Effect */}
           <div className="absolute -inset-4 bg-gradient-primary opacity-10 blur-3xl rounded-3xl -z-10" />
         </div>

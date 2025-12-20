@@ -12,13 +12,13 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>CodeAware Triage - IA Local para Triagem de Chamados de Suporte</title>
+        <title>SourceReply Triage - IA Local para Triagem de Chamados de Suporte</title>
         <meta 
           name="description" 
           content="Automatize a triagem de chamados de suporte técnico com IA que roda 100% no seu hardware. Zero vazamento de dados, privacidade total. Teste grátis por 14 dias." 
         />
         <meta name="keywords" content="triagem chamados, suporte técnico, IA local, privacidade, LGPD, automação TI" />
-        <link rel="canonical" href="https://codeaware.com" />
+        <link rel="canonical" href="https://sourcereply.com" />
       </Helmet>
       
       <div className="min-h-screen bg-background">

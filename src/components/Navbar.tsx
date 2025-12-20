@@ -11,11 +11,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-foreground font-bold text-sm">CA</span>
-            </div>
+            <img src="/logo.png" alt="SourceReply Logo" className="w-8 h-8" />
             <span className="text-xl font-bold text-foreground">
-              Code<span className="gradient-text">Aware</span>
+              Source<span className="gradient-text">Reply</span>
             </span>
           </a>
 
@@ -53,22 +51,22 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border/50">
             <div className="flex flex-col gap-4">
-              <a 
-                href="#funcionalidades" 
+              <a
+                href="#funcionalidades"
                 className="text-muted-foreground hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Funcionalidades
               </a>
-              <a 
-                href="#seguranca" 
+              <a
+                href="#seguranca"
                 className="text-muted-foreground hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Segurança
               </a>
-              <a 
-                href="#preco" 
+              <a
+                href="#preco"
                 className="text-muted-foreground hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >

@@ -23,7 +23,7 @@ const SecuritySection = () => {
     <section id="seguranca" className="py-24 md:py-32 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-purple/5 rounded-full blur-[100px]" />
-      
+
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
@@ -37,17 +37,17 @@ const SecuritySection = () => {
               Sua Infraestrutura.
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Diferente de SaaS tradicionais, o CodeAware é um{" "}
-              <span className="text-foreground font-medium">Desktop App</span>. 
-              Seus segredos industriais e dados de clientes nunca saem da sua rede local. 
+              Diferente de SaaS tradicionais, o SourceReply é um{" "}
+              <span className="text-foreground font-medium">Desktop App</span>.
+              Seus segredos industriais e dados de clientes nunca saem da sua rede local.
               Compliance total com LGPD e normas de segurança corporativa.
             </p>
-            
+
             {/* Features List */}
             <div className="space-y-4">
               {features.map((feature, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="flex items-start gap-4 p-4 rounded-xl bg-muted/30 border border-border/50 hover:border-primary/30 transition-colors"
                 >
                   <div className="w-10 h-10 rounded-lg bg-neon-purple/10 border border-neon-purple/30 flex items-center justify-center shrink-0">
