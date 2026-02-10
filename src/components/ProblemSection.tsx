@@ -1,47 +1,50 @@
 import { Clock, DollarSign, ShieldAlert } from "lucide-react";
-
-const problems = [
-  {
-    icon: Clock,
-    title: "O Gargalo do N1",
-    description: "Chamados acumulam e demoram dias para serem classificados. Sua equipe de suporte está sobrecarregada e os clientes insatisfeitos.",
-    color: "text-neon-purple",
-    bgColor: "bg-neon-purple/10",
-    borderColor: "border-neon-purple/30",
-  },
-  {
-    icon: DollarSign,
-    title: "Custo Alto",
-    description: "Desenvolvedores Sênior parando de codar para responder dúvidas simples. Cada interrupção custa tempo e dinheiro à sua operação.",
-    color: "text-neon-cyan",
-    bgColor: "bg-neon-cyan/10",
-    borderColor: "border-neon-cyan/30",
-  },
-  {
-    icon: ShieldAlert,
-    title: "Risco de Dados",
-    description: "Medo de jogar código proprietário no ChatGPT ou ferramentas online. Seus segredos industriais não podem vazar para terceiros.",
-    color: "text-red-400",
-    bgColor: "bg-red-500/10",
-    borderColor: "border-red-500/30",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ProblemSection = () => {
+  const { t } = useLanguage();
+
+  const problems = [
+    {
+      icon: Clock,
+      title: t('problem.cards.bottleneck.title'),
+      description: t('problem.cards.bottleneck.description'),
+      color: "text-neon-purple",
+      bgColor: "bg-neon-purple/10",
+      borderColor: "border-neon-purple/30",
+    },
+    {
+      icon: DollarSign,
+      title: t('problem.cards.cost.title'),
+      description: t('problem.cards.cost.description'),
+      color: "text-neon-cyan",
+      bgColor: "bg-neon-cyan/10",
+      borderColor: "border-neon-cyan/30",
+    },
+    {
+      icon: ShieldAlert,
+      title: t('problem.cards.risk.title'),
+      description: t('problem.cards.risk.description'),
+      color: "text-red-400",
+      bgColor: "bg-red-500/10",
+      borderColor: "border-red-500/30",
+    },
+  ];
+
   return (
     <section className="py-24 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-sm font-medium text-neon-purple uppercase tracking-wider mb-4 block">
-            O Problema
+            {t('problem.badge')}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Sua equipe de suporte está{" "}
-            <span className="gradient-text">queimando dinheiro</span>
+            {t('problem.title')}{" "}
+            <span className="gradient-text">{t('problem.title_highlight')}</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Enquanto você lê isso, chamados estão acumulando e desenvolvedores estão sendo interrompidos.
+            {t('problem.description')}
           </p>
         </div>
 

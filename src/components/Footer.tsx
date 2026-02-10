@@ -1,6 +1,8 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
   return (
     <footer className="py-12 border-t border-border/50">
       <div className="container mx-auto px-4 md:px-6">
@@ -14,33 +16,32 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-muted-foreground max-w-sm">
-              Triagem inteligente de chamados com IA local.
-              Privacidade total, zero vazamento de dados.
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold mb-4">Produto</h4>
+            <h4 className="font-semibold mb-4">{t('footer.product.title')}</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#funcionalidades" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Funcionalidades
+                  {t('footer.product.features')}
                 </a>
               </li>
               <li>
                 <a href="#seguranca" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Segurança
+                  {t('footer.product.security')}
                 </a>
               </li>
               <li>
                 <a href="#preco" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Preços
+                  {t('footer.product.pricing')}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Changelog
+                  {t('footer.product.changelog')}
                 </a>
               </li>
             </ul>
@@ -48,26 +49,26 @@ const Footer = () => {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
+            <h4 className="font-semibold mb-4">{t('footer.legal.title')}</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Termos de Uso
+                  {t('footer.legal.terms')}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Política de Privacidade
+                  {t('footer.legal.privacy')}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  LGPD
+                  {t('footer.legal.lgpd')}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Contato
+                  {t('footer.legal.contact')}
                 </a>
               </li>
             </ul>
@@ -77,7 +78,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-border/50 gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} SourceReply. Todos os direitos reservados.
+            {t('footer.rights').replace('2026', String(new Date().getFullYear()))}
           </p>
 
           {/* Social Links */}

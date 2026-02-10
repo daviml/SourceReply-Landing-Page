@@ -1,24 +1,27 @@
 import { Shield, Server, Lock, Eye, CheckCircle2 } from "lucide-react";
-
-const features = [
-  {
-    icon: Server,
-    title: "Processamento 100% Local",
-    description: "Todo o processamento de IA acontece na sua máquina. Nada é enviado para servidores externos.",
-  },
-  {
-    icon: Lock,
-    title: "Código Nunca Sai da Rede",
-    description: "Seus arquivos de código-fonte permanecem onde devem estar: na sua infraestrutura.",
-  },
-  {
-    icon: Eye,
-    title: "Compliance Garantido",
-    description: "Total aderência à LGPD e normas de segurança corporativa. Sem letras miúdas.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const SecuritySection = () => {
+  const { t } = useLanguage();
+
+  const features = [
+    {
+      icon: Server,
+      title: t('security.features.local.title'),
+      description: t('security.features.local.description'),
+    },
+    {
+      icon: Lock,
+      title: t('security.features.network.title'),
+      description: t('security.features.network.description'),
+    },
+    {
+      icon: Eye,
+      title: t('security.features.compliance.title'),
+      description: t('security.features.compliance.description'),
+    },
+  ];
+
   return (
     <section id="seguranca" className="py-24 md:py-32 relative overflow-hidden">
       {/* Background Effects */}
@@ -29,18 +32,17 @@ const SecuritySection = () => {
           {/* Left Content */}
           <div>
             <span className="text-sm font-medium text-neon-purple uppercase tracking-wider mb-4 block">
-              Segurança Enterprise
+              {t('security.badge')}
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              Sua Inteligência.{" "}
-              <span className="gradient-text">Seus Dados.</span>{" "}
-              Sua Infraestrutura.
+              {t('security.title')}{" "}
+              <span className="gradient-text">{t('security.title_highlight')}</span>{" "}
+              {t('security.title_suffix')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Diferente de SaaS tradicionais, o SourceReply é um{" "}
-              <span className="text-foreground font-medium">Desktop App</span>.
-              Seus segredos industriais e dados de clientes nunca saem da sua rede local.
-              Compliance total com LGPD e normas de segurança corporativa.
+              {t('security.description_1')}{" "}
+              <span className="text-foreground font-medium">{t('security.description_highlight')}</span>.
+              {t('security.description_2')}
             </p>
 
             {/* Features List */}
@@ -77,12 +79,7 @@ const SecuritySection = () => {
 
               {/* Security Checklist */}
               <div className="space-y-4">
-                {[
-                  "Zero telemetria ou coleta de dados",
-                  "Modelos de IA otimizados para CPU",
-                  "Sem dependência de internet",
-                  "Auditoria completa disponível",
-                ].map((item, index) => (
+                {(t('security.checklist') as unknown as string[]).map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0" />
                     <span className="text-foreground">{item}</span>
@@ -94,7 +91,7 @@ const SecuritySection = () => {
               <div className="mt-8 p-4 rounded-xl bg-gradient-to-r from-neon-purple/10 to-neon-cyan/10 border border-neon-purple/30">
                 <div className="flex items-center justify-center gap-2 text-sm">
                   <Lock className="w-4 h-4 text-neon-cyan" />
-                  <span className="font-medium">LGPD & ISO 27001 Ready</span>
+                  <span className="font-medium">{t('security.badge_lgpd')}</span>
                 </div>
               </div>
             </div>

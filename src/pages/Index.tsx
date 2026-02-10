@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useLanguage } from "@/contexts/LanguageContext";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
@@ -9,18 +10,19 @@ import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  const { t } = useLanguage();
   return (
     <>
       <Helmet>
-        <title>SourceReply Triage - IA Local para Triagem de Chamados de Suporte</title>
-        <meta 
-          name="description" 
-          content="Automatize a triagem de chamados de suporte técnico com IA que roda 100% no seu hardware. Zero vazamento de dados, privacidade total. Teste grátis por 14 dias." 
+        <title>{t('meta.title')}</title>
+        <meta
+          name="description"
+          content={t('meta.description')}
         />
-        <meta name="keywords" content="triagem chamados, suporte técnico, IA local, privacidade, LGPD, automação TI" />
+        <meta name="keywords" content={t('meta.keywords')} />
         <link rel="canonical" href="https://sourcereply.com" />
       </Helmet>
-      
+
       <div className="min-h-screen bg-background">
         <Navbar />
         <main>

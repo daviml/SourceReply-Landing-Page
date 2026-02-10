@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Download, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
@@ -20,31 +23,35 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#funcionalidades" className="text-muted-foreground hover:text-foreground transition-colors">
-              Funcionalidades
+              {t('nav.features')}
             </a>
             <a href="#seguranca" className="text-muted-foreground hover:text-foreground transition-colors">
-              Segurança
+              {t('nav.security')}
             </a>
             <a href="#preco" className="text-muted-foreground hover:text-foreground transition-colors">
-              Preço
+              {t('nav.pricing')}
             </a>
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
             <Button variant="hero" size="lg" className="gap-2">
               <Download className="w-4 h-4" />
-              Baixar Trial Gratuito
+              {t('nav.download')}
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-foreground p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="md:hidden flex items-center gap-4">
+            <LanguageSwitcher />
+            <button
+              className="text-foreground p-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -56,25 +63,25 @@ const Navbar = () => {
                 className="text-muted-foreground hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Funcionalidades
+                {t('nav.features')}
               </a>
               <a
                 href="#seguranca"
                 className="text-muted-foreground hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Segurança
+                {t('nav.security')}
               </a>
               <a
                 href="#preco"
                 className="text-muted-foreground hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Preço
+                {t('nav.pricing')}
               </a>
               <Button variant="hero" size="lg" className="gap-2 mt-2">
                 <Download className="w-4 h-4" />
-                Baixar Trial Gratuito
+                {t('nav.download')}
               </Button>
             </div>
           </div>
