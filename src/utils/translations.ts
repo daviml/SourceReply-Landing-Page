@@ -166,6 +166,24 @@ export const translations = {
         success: "Message sent successfully. Our team will contact you shortly."
       }
     },
+    presentation: {
+      badge: "Deep Dive",
+      title: "Executive",
+      title_highlight: "Presentation",
+      description: "Explore how SourceReply transforms IT infrastructure and support through our detailed architectural overview.",
+      note: "* Use arrows to navigate through the technical presentation slides.",
+      slides: [
+        "Executive Presentation",
+        "Immediate Impact on Operations",
+        "The Pain of L2 Operations",
+        "The Product: SourceReply",
+        "RAG Technology",
+        "Inference Engine & Native Stack",
+        "The Value: ROI",
+        "From Triage to Corporate Oracle",
+        "SourceReply in Action"
+      ]
+    },
     faq: {
       badge: "FAQ",
       title: "Clear your",
@@ -380,6 +398,24 @@ export const translations = {
         submit: "Solicitar Contato",
         success: "Mensagem enviada com sucesso. Nossa equipe entrará em contato em breve."
       }
+    },
+    presentation: {
+      badge: "Deep Dive",
+      title: "Apresentação",
+      title_highlight: "Executiva",
+      description: "Explore como o SourceReply transforma a infraestrutura e o suporte de TI através da nossa visão arquitetural detalhada.",
+      note: "* Use as setas para navegar pelos slides da apresentação técnica.",
+      slides: [
+        "Apresentação Executiva",
+        "Impacto Imediato na Operação",
+        "A Dor da Operação N2",
+        "O Produto: SourceReply",
+        "Tecnologia RAG",
+        "Motor de Inferência e Stack Nativa",
+        "O Valor: ROI",
+        "De Triagem para Oráculo Corporativo",
+        "SourceReply em Ação"
+      ]
     },
     faq: {
       badge: "Perguntas Frequentes",
