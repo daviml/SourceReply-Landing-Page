@@ -3,359 +3,434 @@ export const translations = {
     nav: {
       features: "Features",
       security: "Security",
-      pricing: "Pricing",
-      download: "Download Free Trial",
+      tech_stack: "Architecture",
+      poc: "Proof of Concept",
+      contact: "Schedule Demo",
     },
     hero: {
       badge: "Local AI • Zero Cloud • 100% Private",
-      headline_prefix: "Stop burning",
-      headline_highlight: "Developer",
-      headline_suffix: "hours on Level 1 Support.",
-      subheadline_1: "The first AI triage system that runs",
-      subheadline_highlight: "100% on your hardware",
-      subheadline_2: "Connect your source code, import your tickets, and get accurate diagnoses in seconds.",
+      headline_prefix: "Transform your L2 Support and create the",
+      headline_highlight: "Corporate Oracle",
+      headline_suffix: "of your company with 100% Local AI.",
+      subheadline_1: "Ensure IT Governance, Security, and Operational Efficiency with an AI that runs",
+      subheadline_highlight: "100% on your internal hardware",
+      subheadline_2: "Connect your repositories and knowledge bases with absolute privacy.",
       subheadline_privacy: "Zero data leakage.",
-      cta_download: "Download for Windows - 14 Days Free",
-      cta_demo: "Watch Video Demo",
-      social_proof: "Trusted by privacy-first teams",
+      cta_download: "Schedule Demonstration",
+      cta_demo: "Talk to an Expert",
+      social_proof: "Trusted by security-first enterprise teams",
       visual: {
-        project_local: "Local Project",
-        tickets_waiting: "Tickets Waiting",
-        tickets_count: "47 Tickets",
-        ticket_title: "#1847 - Authentication Error",
-        ticket_desc: "User cannot login after update",
-        analyzing: "Analyzing...",
-        diagnosis_done: "Diagnosis Complete",
-        cause_identified: "Cause identified in",
-        version: "SourceReply Triage v2.1.0"
+        project_local: "Local Infrastructure",
+        tickets_waiting: "Awaiting Triage",
+        tickets_count: "Enterprise Load",
+        ticket_title: "INC-8892 - Critical Auth Failure",
+        ticket_desc: "Production deployment caused login timeout",
+        analyzing: "Analyzing Context...",
+        diagnosis_done: "Root Cause Identified",
+        cause_identified: "Vulnerability found in",
+        version: "SourceReply Enterprise Edition"
       }
     },
     problem: {
-      badge: "The Problem",
-      title: "Your support team is",
-      title_highlight: "burning money",
-      description: "While you read this, tickets are piling up and developers are being interrupted.",
+      badge: "The Problem: Shadow AI",
+      title: "The hidden risk of your",
+      title_highlight: "Operations",
+      description: "Developers pasting sensitive code into public AI tools is a massive compliance breach waiting to happen.",
       cards: {
         bottleneck: {
-          title: "L1 Bottleneck",
-          description: "Tickets pile up and take days to be classified. Your support team is overwhelmed and customers are dissatisfied."
+          title: "Data Leakage Risk",
+          description: "Proprietary source code and customer data being sent to third-party language models outside your network."
         },
         cost: {
-          title: "High Cost",
-          description: "Senior Developers stop coding to answer simple questions. Every interruption costs time and money to your operation."
+          title: "L2 Bottleneck",
+          description: "Senior engineers are constantly interrupted to investigate repetitive tickets, halting feature development and burning company resources."
         },
         risk: {
-          title: "Data Risk",
-          description: "Fear of pasting proprietary code into ChatGPT or online tools. Your industrial secrets cannot leak to third parties."
+          title: "Knowledge Silos",
+          description: "Architectural knowledge remains locked in the minds of a few senior developers, making onboarding new engineers slow and expensive."
         }
       }
     },
     solution: {
       badge: "The Solution",
-      title: "Automatic triage in",
-      title_highlight: "3 simple steps",
-      description: "Configure once, automate forever. No complexity, no learning curve.",
+      title: "Enterprise AI, secured behind your",
+      title_highlight: "Firewall",
+      description: "SourceReply acts as the ultimate barrier against data leaks. 100% Offline (Localhost) operating via RAG technology.",
       steps: {
         1: {
-          title: "Connect",
-          description: "Point to your local code folder. Our RAG technology indexes your repository with total security."
+          title: "Absolute Privacy",
+          description: "Connect your local repositories and internal wikis. Our secure RAG pipeline indexes everything without sending a single byte to the cloud."
         },
         2: {
-          title: "Import",
-          description: "Upload your ticket spreadsheet or connect directly with your existing ticket system."
+          title: "Local Processing",
+          description: "Run advanced Large Language Models directly on your company's hardware or trusted private cloud infrastructure."
         },
         3: {
-          title: "Resolve",
-          description: "Our IA analyzes code logic vs. reported error and delivers precise diagnosis in seconds."
+          title: "Instant Resolution",
+          description: "Context-aware AI analyzes complex L2 tickets against your proprietary codebase, delivering precise root cause analyses instantly."
+        }
+      }
+    },
+    value_journey: {
+      badge: "Land and Expand",
+      title: "The Value",
+      title_highlight: "Journey",
+      description: "Immediate ROI combined with a long-term strategic vision for your engineering capability.",
+      steps: {
+        1: {
+          title: "Step 1: Automated L2 Ticket Triage",
+          subtitle: "Immediate Gain",
+          description: "Drastic reduction in investigation time. Deflects repetitive troubleshooting, freeing up your Senior Developers to focus entirely on engineering and product delivery."
+        },
+        2: {
+          title: "Step 2: The Corporate Oracle",
+          subtitle: "Future Vision",
+          description: "A contextualized, private AI chatbot trained exclusively on your company's tech stack. Serves as an interactive tutor for accelerating new developer onboarding and ensuring architectural knowledge retention."
+        }
+      }
+    },
+    tech_stack: {
+      badge: "For CTOs & Architects",
+      title: "Built for Performance &",
+      title_highlight: "Integration",
+      description: "High-performance architecture bypassing exorbitant cloud computing costs.",
+      features: {
+        engine: {
+          title: "Optimized ONNX Engine",
+          description: "Prepared to run efficiently on standard local hardware. Maximizes CPU/GPU utilization without requiring massive server clusters."
+        },
+        integration: {
+          title: "Seamless Enterprise Integration",
+          description: "Connects via API to Jira, ServiceNow, Zendesk, and reads from GitHub, GitLab, Bitbucket natively."
+        },
+        model: {
+          title: "License & Source Code Acquisition",
+          description: "Acquire a robust, production-ready version with the freedom to plug in your own local LLMs and evolve the system internally."
         }
       }
     },
     security: {
       badge: "Enterprise Security",
       title: "Your Intelligence.",
-      title_highlight: "Your Data.",
+      title_highlight: "Your Rules.",
       title_suffix: "Your Infrastructure.",
-      description_1: "Unlike traditional SaaS, SourceReply is a",
-      description_highlight: "Desktop App",
-      description_2: "Your industrial secrets and customer data never leave your local network. Total compliance with GDPR and corporate security standards.",
+      description_1: "Unlike traditional SaaS, SourceReply is an",
+      description_highlight: "Enterprise Infrastructure Solution",
+      description_2: "Your industrial secrets never leave your network. Total compliance with GDPR, SOC2, and ISO 27001.",
       features: {
         local: {
-          title: "100% Local Processing",
-          description: "All AI processing happens on your machine. Nothing is sent to external servers."
+          title: "Air-Gapped Capable",
+          description: "Engineered to function in completely isolated network environments."
         },
         network: {
-          title: "Code Never Leaves the Network",
-          description: "Your source code files stay where they belong: in your infrastructure."
+          title: "Zero Data Egress",
+          description: "We guarantee that your source code, tickets, and internal discussions never hit the public internet."
         },
         compliance: {
-          title: "Guaranteed Compliance",
-          description: "Total adherence to GDPR and corporate security standards. No fine print."
+          title: "Complete Auditability",
+          description: "Full access to the source code allows your security team to conduct exhaustive penetration testing and audits."
         }
       },
       checklist: [
         "Zero telemetry or data collection",
-        "CPU-optimized AI models",
-        "No internet dependency",
-        "Full audit available"
+        "Self-hosted LLM compatibility",
+        "Air-gap deployment ready",
+        "Full source code access"
       ],
-      badge_lgpd: "GDPR & ISO 27001 Ready"
+      badge_lgpd: "GDPR, SOC2 & ISO 27001 Ready"
     },
-    pricing: {
-      badge: "Transparent Pricing",
-      title: "One plan.",
-      title_highlight: "All inclusive.",
-      description: "No surprises, no hidden fees. Pay only for what you use.",
-      popular: "Most Popular",
-      plan_name: "Professional License",
-      plan_desc: "For teams that need agility",
-      price_suffix: "/month",
-      per_seat: "per seat",
-      cta: "Start Free Trial (No Card)",
-      guarantee: "14 days free • Cancel anytime",
+    poc: {
+      badge: "Validation",
+      title: "Prove the ROI in",
+      title_highlight: "2 Weeks",
+      description: "Schedule a comprehensive Proof of Concept (POC) tailored to your environment.",
       benefits: [
-        "Unlimited Tickets",
-        "Unlimited Code Analysis (Local)",
-        "AI Model Updates",
-        "Priority Support",
-        "Ticket System Integration",
-        "Detailed Reports & Metrics"
-      ]
+        "Validate routing precision",
+        "Measure local latency in real scenarios",
+        "Test integration with your actual repos",
+        "Verify security compliance directly"
+      ],
+      cta: "Request POC details"
+    },
+    contact: {
+      badge: "Get in Touch",
+      title: "Ready to implement your",
+      title_highlight: "Private AI?",
+      description: "Leave your details below and our enterprise specialists will contact you to discuss your infrastructure needs.",
+      form: {
+        name: "Full Name",
+        role: "Job Title",
+        company: "Company Name",
+        email: "Corporate Email",
+        submit: "Request Contact",
+        success: "Message sent successfully. Our team will contact you shortly."
+      }
     },
     faq: {
       badge: "FAQ",
       title: "Clear your",
       title_highlight: "doubts",
-      description: "Answers to the most common questions about SourceReply.",
+      description: "Answers to the most common questions about SourceReply Enterprise.",
       questions: [
         {
-          q: "Do I need a super graphics card?",
-          a: "No. We optimize lightweight models that run on any modern CPU (i5/Ryzen 5 or higher). SourceReply was designed to work on common office hardware, without needing dedicated GPUs or special machines."
+          q: "What is the business model?",
+          a: "We operate on a License and Source Code Acquisition model. You purchase the software license granting you full access to the source code, allowing your internal teams to modify, extend, and plug in new models as they see fit."
         },
         {
           q: "Do my data go to Google/OpenAI?",
-          a: "No. Processing is 100% local or via your own API key, you choose. No data, code, or ticket leaves your network. We are fully committed to your company's privacy."
+          a: "No. The system is designed to run completely offline (localhost) using self-hosted LLMs. You have physical control over the data processed."
         },
         {
-          q: "What is the maximum code size I can index?",
-          a: "SourceReply supports repositories up to 50GB. For larger projects, we offer custom optimizations. Indexing is incremental, so after the first time, only changes are processed."
+          q: "What are the hardware requirements?",
+          a: "Our architecture utilizes an optimized ONNX engine, drastically reducing the hardware footprint. It can run efficiently on modern internal servers without requiring exorbitant GPU clusters, though GPU acceleration is supported."
         },
         {
-          q: "Does it work with any programming language?",
-          a: "Yes! SourceReply supports all most popular languages: JavaScript, TypeScript, Python, Java, C#, Go, Rust, PHP, Ruby, and many others. The AI model was trained to understand code logic regardless of syntax."
-        },
-        {
-          q: "How does integration with ticket systems work?",
-          a: "You can import tickets via spreadsheet (CSV/Excel) or integrate directly via API with systems like Jira, Zendesk, Freshdesk, and others. Configuration takes less than 10 minutes."
-        },
-        {
-          q: "Can I use my own AI API key?",
-          a: "Yes! We offer the option to use your own API key (OpenAI, Anthropic, etc.) if you prefer. In this case, data is sent directly to the provider of your choice, keeping you in full control."
+          q: "How does the POC work?",
+          a: "The 2-week Proof of Concept is designed to validate the precision of ticket routing and response latency within your actual environment, using a subset of your repositories and tickets."
         }
       ]
     },
     footer: {
-      description: "Intelligent ticket triage with local AI. Total privacy, zero data leakage.",
+      description: "Enterprise-grade local AI infrastructure. Complete privacy, zero data leakage.",
       product: {
         title: "Product",
-        features: "Features",
+        features: "Architecture",
         security: "Security",
-        pricing: "Pricing",
-        changelog: "Changelog"
+        pricing: "Contact Us",
+        changelog: "Updates"
       },
       legal: {
         title: "Legal",
-        terms: "Terms of Use",
+        terms: "Terms of Service",
         privacy: "Privacy Policy",
-        lgpd: "GDPR",
+        lgpd: "Compliance",
         contact: "Contact"
       },
       rights: "© 2026 SourceReply. All rights reserved."
     },
     meta: {
-      title: "SourceReply Triage - Local AI for Support Ticket Triage",
-      description: "Automate technical support ticket triage with AI that runs 100% on your hardware. Zero data leakage, total privacy. Try free for 14 days.",
-      keywords: "ticket triage, technical support, local AI, privacy, GDPR, IT automation"
+      title: "SourceReply - Enterprise Local AI for IT Operations",
+      description: "Transform your L2 Support with an AI Oracle that runs 100% locally on your hardware. Zero data leakage, full source code access. Schedule a demo.",
+      keywords: "enterprise AI, local AI, localhost AI, IT operations, L2 support, ticket triage, knowledge base, RAG, compliance"
     }
   },
   pt: {
     nav: {
-      features: "Funcionalidades",
+      features: "Recursos",
       security: "Segurança",
-      pricing: "Preço",
-      download: "Baixar Trial Gratuito",
+      tech_stack: "Arquitetura",
+      poc: "Prova de Conceito",
+      contact: "Agendar Demo",
     },
     hero: {
       badge: "IA Local • Zero Cloud • 100% Privado",
-      headline_prefix: "Pare de queimar horas de",
-      headline_highlight: "Desenvolvedor",
-      headline_suffix: "com Suporte Nível 1.",
-      subheadline_1: "O primeiro sistema de triagem com IA que roda",
+      headline_prefix: "Transforme seu suporte N2 e crie o",
+      headline_highlight: "Oráculo Corporativo",
+      headline_suffix: "da sua empresa com IA 100% Local.",
+      subheadline_1: "Garanta Governança de TI, Segurança e Eficiência Operacional com uma IA que roda",
       subheadline_highlight: "100% no seu hardware",
-      subheadline_2: "Conecte seu código-fonte, importe seus chamados e tenha diagnósticos precisos em segundos.",
+      subheadline_2: "Conecte seus repositórios e bases de conhecimento com privacidade absoluta.",
       subheadline_privacy: "Zero vazamento de dados.",
-      cta_download: "Baixar para Windows - 14 Dias Grátis",
-      cta_demo: "Ver Demo em Vídeo",
-      social_proof: "Usado por equipes que prezam pela privacidade",
+      cta_download: "Agendar Demonstração",
+      cta_demo: "Falar com Especialista",
+      social_proof: "Confiado por equipes enterprise focadas em segurança",
       visual: {
-        project_local: "Projeto Local",
-        tickets_waiting: "Aguardando triagem",
-        tickets_count: "47 Chamados",
-        ticket_title: "#1847 - Erro de autenticação",
-        ticket_desc: "Usuário não consegue fazer login após atualização",
-        analyzing: "Analisando...",
-        diagnosis_done: "Diagnóstico Concluído",
-        cause_identified: "Causa identificada em",
-        version: "SourceReply Triage v2.1.0"
+        project_local: "Infraestrutura Local",
+        tickets_waiting: "Aguardando Triagem",
+        tickets_count: "Carga Enterprise",
+        ticket_title: "INC-8892 - Falha Crítica de Auth",
+        ticket_desc: "Deploy em produção causou timeout de login",
+        analyzing: "Analisando Contexto...",
+        diagnosis_done: "Causa Raiz Identificada",
+        cause_identified: "Vulnerabilidade encontrada em",
+        version: "SourceReply Enterprise Edition"
       }
     },
     problem: {
-      badge: "O Problema",
-      title: "Sua equipe de suporte está",
-      title_highlight: "queimando dinheiro",
-      description: "Enquanto você lê isso, chamados estão acumulando e desenvolvedores estão sendo interrompidos.",
+      badge: "O Problema: Shadow AI",
+      title: "O risco oculto na sua",
+      title_highlight: "Operação",
+      description: "Desenvolvedores colando código sensível em IAs públicas é uma enorme quebra de compliance prestes a acontecer.",
       cards: {
         bottleneck: {
-          title: "O Gargalo do N1",
-          description: "Chamados acumulam e demoram dias para serem classificados. Sua equipe de suporte está sobrecarregada e os clientes insatisfeitos."
+          title: "Risco de Vazamento",
+          description: "Código-fonte proprietário e dados de clientes sendo enviados para modelos de linguagem de terceiros fora da sua rede."
         },
         cost: {
-          title: "Custo Alto",
-          description: "Desenvolvedores Sênior parando de codar para responder dúvidas simples. Cada interrupção custa tempo e dinheiro à sua operação."
+          title: "Gargalo no N2",
+          description: "Engenheiros seniores são interrompidos constantemente para investigar chamados repetitivos, pausando o desenvolvimento."
         },
         risk: {
-          title: "Risco de Dados",
-          description: "Medo de jogar código proprietário no ChatGPT ou ferramentas online. Seus segredos industriais não podem vazar para terceiros."
+          title: "Silos de Conhecimento",
+          description: "O conhecimento arquitetural fica preso na mente de alguns seniores, tornando o onboarding de novos devs lento e caro."
         }
       }
     },
     solution: {
       badge: "A Solução",
-      title: "Triagem automática em",
-      title_highlight: "3 passos simples",
-      description: "Configure uma vez, automatize para sempre. Sem complexidade, sem curva de aprendizado.",
+      title: "IA Enterprise, protegida pelo seu",
+      title_highlight: "Firewall",
+      description: "SourceReply atua como a barreira definitiva contra vazamentos. 100% Offline (Localhost) operando via tecnologia RAG.",
       steps: {
         1: {
-          title: "Conecte",
-          description: "Aponte a pasta do seu código localmente. Nossa tecnologia RAG indexa seu repositório com segurança total."
+          title: "Privacidade Absoluta",
+          description: "Conecte seus repositórios locais. Nosso pipeline RAG seguro indexa tudo sem enviar um único byte para a nuvem."
         },
         2: {
-          title: "Importe",
-          description: "Carregue sua planilha de chamados ou conecte diretamente com seu sistema de tickets existente."
+          title: "Processamento Local",
+          description: "Execute LLMs avançados diretamente no hardware da sua empresa ou infraestrutura de nuvem privada confiável."
         },
         3: {
-          title: "Resolva",
-          description: "Nossa IA analisa a lógica do código vs. o erro reportado e entrega o diagnóstico preciso em segundos."
+          title: "Resolução Instantânea",
+          description: "A IA contextualizada analisa chamados complexos N2 contra seu código, entregando causas raiz instantaneamente."
+        }
+      }
+    },
+    value_journey: {
+      badge: "Land and Expand",
+      title: "A Jornada de",
+      title_highlight: "Valor",
+      description: "ROI imediato combinado com uma visão estratégica de longo prazo para sua engenharia.",
+      steps: {
+        1: {
+          title: "Passo 1: Triagem Automatizada N2",
+          subtitle: "O Ganho Imediato",
+          description: "Redução drástica do tempo de investigação. Desvia chamados repetitivos, liberando seus desenvolvedores seniores para focar em engenharia."
+        },
+        2: {
+          title: "Passo 2: O Oráculo Corporativo",
+          subtitle: "A Visão de Futuro",
+          description: "Um chatbot privado treinado com a stack da empresa. Serve como tutor interativo para acelerar o onboarding de devs e reter o conhecimento arquitetural."
+        }
+      }
+    },
+    tech_stack: {
+      badge: "Para CTOs & Arquitetos",
+      title: "Construído para Performance &",
+      title_highlight: "Integração",
+      description: "Arquitetura de alta performance que evita custos exorbitantes de computação em nuvem.",
+      features: {
+        engine: {
+          title: "Motor ONNX Otimizado",
+          description: "Preparado para rodar eficientemente em hardware local. Maximiza CPU/GPU sem exigir clusters gigantes."
+        },
+        integration: {
+          title: "Integração Enterprise",
+          description: "Conecta via API com Jira, ServiceNow, Zendesk, e lê repositórios do GitHub, GitLab, Bitbucket."
+        },
+        model: {
+          title: "Aquisição de Licença e Código-Fonte",
+          description: "Adquira a versão robusta atual e ganhe total liberdade para plugar seus próprios LLMs e evoluir internamente."
         }
       }
     },
     security: {
       badge: "Segurança Enterprise",
       title: "Sua Inteligência.",
-      title_highlight: "Seus Dados.",
+      title_highlight: "Suas Regras.",
       title_suffix: "Sua Infraestrutura.",
-      description_1: "Diferente de SaaS tradicionais, o SourceReply é um",
-      description_highlight: "Desktop App",
-      description_2: "Seus segredos industriais e dados de clientes nunca saem da sua rede local. Compliance total com LGPD e normas de segurança corporativa.",
+      description_1: "Diferente de SaaS tradicional, SourceReply é uma",
+      description_highlight: "Solução de Infraestrutura Enterprise",
+      description_2: "Seus segredos não saem da sua rede. Compliance total com LGPD, SOC2 e ISO 27001.",
       features: {
         local: {
-          title: "Processamento 100% Local",
-          description: "Todo o processamento de IA acontece na sua máquina. Nada é enviado para servidores externos."
+          title: "Air-Gapped",
+          description: "Projetado para funcionar em ambientes de rede completamente isolados (offline)."
         },
         network: {
-          title: "Código Nunca Sai da Rede",
-          description: "Seus arquivos de código-fonte permanecem onde devem estar: na sua infraestrutura."
+          title: "Zero Saída de Dados",
+          description: "Garantimos que seu código, chamados e discussões nunca atinjam a internet pública."
         },
         compliance: {
-          title: "Compliance Garantido",
-          description: "Total aderência à LGPD e normas de segurança corporativa. Sem letras miúdas."
+          title: "Auditabilidade Completa",
+          description: "Acesso total ao código fonte permite que sua equipe de segurança realize testes rigorosos."
         }
       },
       checklist: [
         "Zero telemetria ou coleta de dados",
-        "Modelos de IA otimizados para CPU",
-        "Sem dependência de internet",
-        "Auditoria completa disponível"
+        "Compatibilidade com LLM próprio",
+        "Pronto para deploy Air-Gap",
+        "Acesso completo ao código-fonte"
       ],
-      badge_lgpd: "LGPD & ISO 27001 Ready"
+      badge_lgpd: "LGPD, SOC2 & ISO 27001 Ready"
     },
-    pricing: {
-      badge: "Preço Transparente",
-      title: "Um plano.",
-      title_highlight: "Tudo incluso.",
-      description: "Sem surpresas, sem taxas ocultas. Pague apenas pelo que você usa.",
-      popular: "Mais Popular",
-      plan_name: "Professional License",
-      plan_desc: "Para equipes que precisam de agilidade",
-      price_suffix: "/mês",
-      per_seat: "por assento",
-      cta: "Começar Teste Grátis (Sem Cartão)",
-      guarantee: "14 dias grátis • Cancele quando quiser",
+    poc: {
+      badge: "Validação",
+      title: "Comprove o ROI em",
+      title_highlight: "2 Semanas",
+      description: "Agende uma Prova de Conceito (POC) estruturada e dimensionada para o seu ambiente.",
       benefits: [
-        "Chamados Ilimitados",
-        "Análise de Código Ilimitada (Local)",
-        "Atualizações do Modelo de IA",
-        "Suporte Prioritário",
-        "Integração com sistemas de tickets",
-        "Relatórios e métricas detalhadas"
-      ]
+        "Valide a precisão do roteamento",
+        "Meça a latência no ambiente real",
+        "Teste com seus próprios repositórios",
+        "Verifique o compliance localmente"
+      ],
+      cta: "Solicitar detalhes da POC"
+    },
+    contact: {
+      badge: "Contato",
+      title: "Pronto para ter seu",
+      title_highlight: "Oráculo Privado?",
+      description: "Deixe seus dados abaixo e nossos especialistas enterprise entrarão em contato para estruturar o projeto.",
+      form: {
+        name: "Nome Completo",
+        role: "Cargo",
+        company: "Empresa",
+        email: "E-mail Corporativo",
+        submit: "Solicitar Contato",
+        success: "Mensagem enviada com sucesso. Nossa equipe entrará em contato em breve."
+      }
     },
     faq: {
       badge: "Perguntas Frequentes",
       title: "Tire suas",
       title_highlight: "dúvidas",
-      description: "As respostas para as perguntas mais comuns sobre o SourceReply.",
+      description: "As respostas para as perguntas mais comuns sobre o SourceReply Enterprise.",
       questions: [
         {
-          q: "Preciso de uma super placa de vídeo?",
-          a: "Não. Otimizamos modelos leves que rodam em qualquer CPU moderna (i5/Ryzen 5 ou superior). O SourceReply foi projetado para funcionar em hardware comum de escritório, sem necessidade de GPUs dedicadas ou máquinas especiais."
+          q: "Como funciona o modelo de negócio?",
+          a: "Operamos no modelo de Aquisição de Licença e Código-Fonte. Você adquire o sistema e ganha liberdade para evoluí-lo internamente e conectar seus próprios modelos (LLMs)."
         },
         {
-          q: "Meus dados vão para o Google/OpenAI?",
-          a: "Não. O processamento é 100% local ou via sua própria chave de API, você escolhe. Nenhum dado, código ou chamado sai da sua rede. Temos compromisso total com a privacidade da sua empresa."
+          q: "Meus dados vão para fornecedores externos (ex: OpenAI)?",
+          a: "Não. O sistema foi construído para operar 100% offline via IA Local. O processamento fica contido no hardware sob seu controle físico ou nuvem privada."
         },
         {
-          q: "Qual o tamanho máximo de código que posso indexar?",
-          a: "O SourceReply suporta repositórios de até 50GB. Para projetos maiores, oferecemos otimizações personalizadas. A indexação é incremental, então após a primeira vez, apenas as mudanças são processadas."
+          q: "Quais os requisitos de infraestrutura?",
+          a: "Utilizamos o motor ONNX otimizado para rodar de forma leve, permitindo o uso de servidores internos modernos, embora o suporte para aceleração via GPU também esteja incluso sem custos adicionais."
         },
         {
-          q: "Funciona com qualquer linguagem de programação?",
-          a: "Sim! O SourceReply suporta todas as linguagens mais populares: JavaScript, TypeScript, Python, Java, C#, Go, Rust, PHP, Ruby e muitas outras. O modelo de IA foi treinado para entender a lógica de código independente da sintaxe."
-        },
-        {
-          q: "Como funciona a integração com sistemas de tickets?",
-          a: "Você pode importar chamados via planilha (CSV/Excel) ou integrar diretamente via API com sistemas como Jira, Zendesk, Freshdesk e outros. A configuração leva menos de 10 minutos."
-        },
-        {
-          q: "Posso usar minha própria API key de IA?",
-          a: "Sim! Oferecemos a opção de usar sua própria chave de API (OpenAI, Anthropic, etc.) se você preferir. Nesse caso, os dados são enviados diretamente para o provedor da sua escolha, mantendo você no controle total."
+          q: "Como estruturar a Prova de Conceito (POC)?",
+          a: "A POC de 2 semanas visa testar a precisão das respostas e a latência da solução diretamente na infraestrutura do cliente, com um repositório isolado."
         }
       ]
     },
     footer: {
-      description: "Triagem inteligente de chamados com IA local. Privacidade total, zero vazamento de dados.",
+      description: "Infraestrutura de IA local para Enterprise. Privacidade total, zero vazamento de dados.",
       product: {
         title: "Produto",
-        features: "Funcionalidades",
+        features: "Arquitetura",
         security: "Segurança",
-        pricing: "Preços",
-        changelog: "Changelog"
+        pricing: "Fale Conosco",
+        changelog: "Atualizações"
       },
       legal: {
         title: "Legal",
         terms: "Termos de Uso",
         privacy: "Política de Privacidade",
-        lgpd: "LGPD",
+        lgpd: "Compliance (LGPD)",
         contact: "Contato"
       },
       rights: "© 2026 SourceReply. Todos os direitos reservados."
     },
     meta: {
-      title: "SourceReply Triage - IA Local para Triagem de Chamados de Suporte",
-      description: "Automatize a triagem de chamados de suporte técnico com IA que roda 100% no seu hardware. Zero vazamento de dados, privacidade total. Teste grátis por 14 dias.",
-      keywords: "triagem chamados, suporte técnico, IA local, privacidade, LGPD, automação TI"
+      title: "SourceReply - IA Local Enterprise para Operações de TI",
+      description: "Transforme o suporte N2 com um Oráculo IA que roda 100% offline. Zero vazamento de dados, acesso ao código-fonte. Agende uma demo.",
+      keywords: "ia enterprise, ia local, oráculo corporativo, triagem n2, suporte ti, rag local, compliance lgpd"
     }
   }
 };
 
 export type Language = 'en' | 'pt';
 export type TranslationKey = keyof typeof translations.en;
+

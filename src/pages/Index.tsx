@@ -5,7 +5,11 @@ import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import SecuritySection from "@/components/SecuritySection";
-import PricingSection from "@/components/PricingSection";
+import ValueJourneySection from "@/components/ValueJourneySection";
+import TechStackSection from "@/components/TechStackSection";
+import POCSection from "@/components/POCSection";
+import ContactSection from "@/components/ContactSection";
+import PresentationCarousel from "@/components/PresentationCarousel";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 
@@ -29,9 +33,13 @@ const Index = () => {
           <HeroSection />
           <ProblemSection />
           <SolutionSection />
+          <ValueJourneySection />
+          <TechStackSection />
+          <PresentationCarousel />
           <SecuritySection />
-          <PricingSection />
+          <POCSection />
           <FAQSection />
+          <ContactSection />
         </main>
         <Footer />
       </div>

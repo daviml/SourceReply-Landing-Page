@@ -1,4 +1,4 @@
-import { Clock, DollarSign, ShieldAlert } from "lucide-react";
+import { AlertTriangle, Clock, Users } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const ProblemSection = () => {
@@ -6,15 +6,15 @@ const ProblemSection = () => {
 
   const problems = [
     {
-      icon: Clock,
+      icon: AlertTriangle,
       title: t('problem.cards.bottleneck.title'),
       description: t('problem.cards.bottleneck.description'),
-      color: "text-neon-purple",
-      bgColor: "bg-neon-purple/10",
-      borderColor: "border-neon-purple/30",
+      color: "text-red-400",
+      bgColor: "bg-red-500/10",
+      borderColor: "border-red-500/30",
     },
     {
-      icon: DollarSign,
+      icon: Clock,
       title: t('problem.cards.cost.title'),
       description: t('problem.cards.cost.description'),
       color: "text-neon-cyan",
@@ -22,12 +22,12 @@ const ProblemSection = () => {
       borderColor: "border-neon-cyan/30",
     },
     {
-      icon: ShieldAlert,
+      icon: Users,
       title: t('problem.cards.risk.title'),
       description: t('problem.cards.risk.description'),
-      color: "text-red-400",
-      bgColor: "bg-red-500/10",
-      borderColor: "border-red-500/30",
+      color: "text-neon-purple",
+      bgColor: "bg-neon-purple/10",
+      borderColor: "border-neon-purple/30",
     },
   ];
 

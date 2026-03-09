@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, Play, Shield, Zap, Lock } from "lucide-react";
+import { Calendar, MessageSquare, Shield, Zap, Lock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
@@ -32,6 +32,7 @@ const HeroSection = () => {
           <h1 className="fade-up-delay-1 text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
             {t('hero.headline_prefix')}{" "}
             <span className="gradient-text">{t('hero.headline_highlight')}</span>{" "}
+            <br className="hidden md:block" />
             {t('hero.headline_suffix')}
           </h1>
 
@@ -45,13 +46,17 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button variant="hero" size="xl" className="w-full sm:w-auto gap-2">
-              <Download className="w-5 h-5" />
-              {t('hero.cta_download')}
+            <Button variant="hero" size="xl" className="w-full sm:w-auto gap-2" asChild>
+              <a href="#contato">
+                <Calendar className="w-5 h-5" />
+                {t('hero.cta_download')}
+              </a>
             </Button>
-            <Button variant="hero-outline" size="xl" className="w-full sm:w-auto gap-2">
-              <Play className="w-5 h-5" />
-              {t('hero.cta_demo')}
+            <Button variant="hero-outline" size="xl" className="w-full sm:w-auto gap-2" asChild>
+              <a href="#contato">
+                <MessageSquare className="w-5 h-5" />
+                {t('hero.cta_demo')}
+              </a>
             </Button>
           </div>
 

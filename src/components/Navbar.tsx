@@ -25,20 +25,24 @@ const Navbar = () => {
             <a href="#funcionalidades" className="text-muted-foreground hover:text-foreground transition-colors">
               {t('nav.features')}
             </a>
+            <a href="#arquitetura" className="text-muted-foreground hover:text-foreground transition-colors">
+              {t('nav.tech_stack')}
+            </a>
             <a href="#seguranca" className="text-muted-foreground hover:text-foreground transition-colors">
               {t('nav.security')}
             </a>
-            <a href="#preco" className="text-muted-foreground hover:text-foreground transition-colors">
-              {t('nav.pricing')}
+            <a href="#contato" className="text-muted-foreground hover:text-foreground transition-colors">
+              {t('nav.contact')}
             </a>
           </div>
 
-          {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <LanguageSwitcher />
-            <Button variant="hero" size="lg" className="gap-2">
-              <Download className="w-4 h-4" />
-              {t('nav.download')}
+            <Button variant="hero" size="lg" className="gap-2" asChild>
+              <a href="#contato">
+                <Download className="w-4 h-4" />
+                {t('nav.download')}
+              </a>
             </Button>
           </div>
 
@@ -66,6 +70,13 @@ const Navbar = () => {
                 {t('nav.features')}
               </a>
               <a
+                href="#arquitetura"
+                className="text-muted-foreground hover:text-foreground transition-colors py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t('nav.tech_stack')}
+              </a>
+              <a
                 href="#seguranca"
                 className="text-muted-foreground hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
@@ -73,15 +84,17 @@ const Navbar = () => {
                 {t('nav.security')}
               </a>
               <a
-                href="#preco"
+                href="#contato"
                 className="text-muted-foreground hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t('nav.pricing')}
+                {t('nav.contact')}
               </a>
-              <Button variant="hero" size="lg" className="gap-2 mt-2">
-                <Download className="w-4 h-4" />
-                {t('nav.download')}
+              <Button variant="hero" size="lg" className="gap-2 mt-2" asChild onClick={() => setIsMenuOpen(false)}>
+                <a href="#contato">
+                  <Download className="w-4 h-4" />
+                  {t('nav.download')}
+                </a>
               </Button>
             </div>
           </div>

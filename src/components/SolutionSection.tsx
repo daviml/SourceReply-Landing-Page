@@ -1,4 +1,4 @@
-import { FolderCode, FileSpreadsheet, Brain, ArrowRight } from "lucide-react";
+import { ShieldCheck, Server, Zap, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const SolutionSection = () => {
@@ -7,7 +7,7 @@ const SolutionSection = () => {
   const steps = [
     {
       number: "01",
-      icon: FolderCode,
+      icon: ShieldCheck,
       title: t('solution.steps.1.title'),
       description: t('solution.steps.1.description'),
       color: "text-neon-purple",
@@ -16,7 +16,7 @@ const SolutionSection = () => {
     },
     {
       number: "02",
-      icon: FileSpreadsheet,
+      icon: Server,
       title: t('solution.steps.2.title'),
       description: t('solution.steps.2.description'),
       color: "text-neon-cyan",
@@ -25,7 +25,7 @@ const SolutionSection = () => {
     },
     {
       number: "03",
-      icon: Brain,
+      icon: Zap,
       title: t('solution.steps.3.title'),
       description: t('solution.steps.3.description'),
       color: "text-green-400",

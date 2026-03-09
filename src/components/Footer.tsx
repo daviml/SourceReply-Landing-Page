@@ -25,7 +25,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">{t('footer.product.title')}</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#funcionalidades" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="#arquitetura" className="text-muted-foreground hover:text-foreground transition-colors">
                   {t('footer.product.features')}
                 </a>
               </li>
@@ -35,7 +35,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#preco" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="#contato" className="text-muted-foreground hover:text-foreground transition-colors">
                   {t('footer.product.pricing')}
                 </a>
               </li>
